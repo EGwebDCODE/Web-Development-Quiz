@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Elishas Rong website</title>
+<style>
+body{
+font-family:sans-serif;
+}
+a{
+color:yellow;
+text-decoration:none;
+font-weight:bold;
+}
+#div1{
+background-image:url(https://tse2.mm.bing.net/th/id/OIP.ye9myvDLpmKkM_BDi7rOGQHaFW?rs=1&pid=ImgDetMain&o=7&rm=3);
+background-size:cover;
+background-repeat:no-repeat;
+height:400px;
+padding-top:30px;
+}
+table{
+width:100%;
+text-align:center;
+font-size:20px;
+}
+body{
+margin:0;
+animation:elisha1 6s infinite;
+}
+h2{
+text-align:center;
+margin-top:20px;
+animation:elisha2 6s infinite alternate;
+}
+#welcome{
+text-align:center;
+color:darkgreen;
+font-size:20px;
+font-weight:bold;
+margin-top:15px;
+}
+@keyframes elisha1{
+1%{background-color:lightseagreen;}
+25%{background-color:lightgoldenrodyellow;}
+50%{background-color:lightslategrey;}
+75%{background-color:lightcoral;}
+100%{background-color:lightgreen;}
+}
+@keyframes elisha2{
+from{font-size:20px; color:green;}
+to{font-size:30px; color:blue;}
+}
+a{
+text-decoration:none;
+color:blue;
+}
+#SGK, #SMQ, #SSQ{
+background-color:lightgreen;
+border:5px palegreen solid;
+display: flex;
+justify-content:center;
+transition: left 0.3s ease; 
+}
+#SGK:hover {
+padding:10px;
+}
+#SMQ:hover {
+padding:10px;
+}
+#SSQ:hover {
+padding:10px;
+}
+footer{
+text-align:center;
+padding:10px;
+background-color:lightblue;
+margin-top:40px;
+}
+</style>
+</head>
+<body onload="register()">
+
+<div id="div1">
+<table>
+<tr>
+<th><a href="#">Home</a></th>
+<th><a href="#gk">General Knowledge</a></th>
+<th><a href="#">Mathematics</a></th>
+<th><a href="#">Science</a></th>
+<th><a href="#">Question Bank</a></th>
+</tr>
+</table>
+<h1 style="text-align:center; padding:130px; opacity:0.4;">Codeyoung</h1>
+</div>
+<h2>Your name is registered below AND IT IS RONG DAY</h2>
+<p id="welcome"></p>
+<div class="Images" style="padding:10px;">
+<table>
+<tr>
+<th><div class="generalKnowledge">
+<img alt="image" src="https://quizax.com/trivia/general-knowledge/images/big/general-knowledge-category.webp" width="256" height="256"><br>
+</div></th>
+<th><div class="mathQuiz">
+<img alt="image" src="https://tse2.mm.bing.net/th/id/OIP.E0gABenSxkzalT_DAnTtowHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" width="256" height="256">
+</div></th>
+<th><div class="scienceQuiz">
+<img alt="image" src="https://www.quizzmind.com/img/science-nature.webp" width="256" height="256">
+</div></th>
+</tr>
+<tr>
+<td><p id="generalKD">A general knowledge quiz is a fun and<br> educational activity that tests your<br> understanding of a wide range of<br> subjects. These quizzes are designed to<br> challenge your brain and provide a<br> platform for learning new facts and<br> information. They can be used for<br> various purposes, such as trivia nights,<br> educational assessments, or simply for<br> entertainment. The questions cover a<br> variety of topics, including history,<br> science, geography, pop culture, and<br> sports, making them suitable for all<br> ages and skill levels.</p></td>
+<td><p id="mathD">Math quizzes are a fun and engaging<br> way to test and improve your math<br> skills. They cover a wide range of<br> topics, from basic arithmetic to<br> complex algebra and geometry. These<br> quizzes are designed to challenge your<br> problem-solving abilities and provide a<br> fun way to learn or review math<br> concepts. Whether you're a student, a<br> professional, or just someone who<br> enjoys solving puzzles, math quizzes<br> can be a great way to enhance your<br> mathematical knowledge and<br> confidence.</p></td>
+<td><p id="scienceD">A science quiz is a fun and educational<br> activity that tests participants'<br> knowledge and understanding of<br> scientific concepts. These quizzes can<br> cover a wide range of topics, from<br> basic science principles to advanced<br> scientific theories. They are often used<br> in educational settings, such as schools<br> and universities, to assess students'<br> learning and to provide an opportunity<br> for them to demonstrate their<br> knowledge. Science quizzes can also be<br> a great way to engage with scientific<br> concepts and encourage critical<br> thinking and problem-solving skills.</p></td>
+</tr>
+<tr>
+<td><button id="SGK" style=""><a href="https://quiz-questions.uk/general-knowledge/"> Start General Knowledge Quiz</a></button></td>
+<td><button id="SMQ"><a href="https://eng.mathgames.com/"> Start Math Quiz</a></button></td>
+<td><button id="SSQ"><a href="https://discovertutoring.co.uk/quiz/"> Start Science Quiz</a></button></td>
+</tr>
+</table>
+</div>
+<div id="gk">
+<center>
+<div>
+<h4>1. What country has the highest life expectancy</h4>
+<button onclick="Rong()">Space</button>
+<button onclick="Right()">Earth</button>
+</div>
+<div>
+<h4>2. What is better, noodles or chicken nuggets</h4>
+<button onclick="Rong()">Noodlles</button>
+<button onclick="Right()">Chicken nuggets</button>
+</div>
+<div>
+<h4>3. What is 1 + 1</h4>
+<button onclick="Rong()">1</button>
+<button onclick="Right()">11</button>
+</div>
+<div>
+<h4>4. What is the square root of 9</h4>
+<button onclick="Rong()">3</button>
+<button onclick="Right()">81</button>
+</div>
+<div>
+<h4>5. Invisible question</h4>
+<button onclick="Rong()">yes</button>
+<button onclick="Right()">no</button>
+</div>
+<div>
+<h4>5. What is the order of keyboard letters</h4>
+<button onclick="Rong()">hratnwaeynlvar9oceuwhomrcwauiovahun3w8vvwa9no3v8</button>
+<button onclick="Right()">qwertyuiopasdfghjklzxcvbnm1234567890</button>
+</div>
+<div>
+<h4>6. Whats more popular</h4>
+<button onclick="Rong()">Chicken Nuggets</button>
+<button onclick="Right()">Rice</button>
+</div>
+<div>
+<h4>7. Which Spelling is correct</h4>
+<button onclick="Rong()">Wrong</button>
+<button onclick="Right()">Rong</button>
+</div>
+<div>
+<h4>8. What is the biggest country</h4>
+<button onclick="Rong()">New zealend</button>
+<button onclick="Right()">Russia</button>
+</div>
+<div>
+<h4>9. Are you Rong</h4>
+<button onclick="Rong()">Yes</button>
+<button onclick="Right()">No</button>
+</div>
+<div>
+<h4>10. RONG</h4>
+<button onclick="Rong()">WRONG</button>
+<button onclick="Right()">RONG</button>
+</div>
+</center>
+</div>
+<footer>
+<div>
+<a href="#" class="icon"><i class="fa fa-facebook"></i></a>
+<a href="#" class="icon"><i class="fa fa-twitter"></i></a>
+<a href="#" class="icon"><i class="fa fa-instagram"></i></a>
+</div>
+<p style="font-weight:bold; font-size:30px; color:lightgoldenrodyellow;">&copy; Made by Elisha</p>
+<p style="color:red; font-size:50px;" >Warning: Facebook and instagram and twitter are bad for you!</p>
+</footer>
+<script>
+function register(){
+let name = prompt("Register your name for the Quiz");
+if(name == null){
+name = "chest";
+}
+document.getElementById("welcome").innerHTML = "Hello " + name + " welcome to rong learner and your name is rong";
+document.getElementById("div1").style.backgroundImage = "url(https://tse3.mm.bing.net/th/id/OIP.xhEbluMaoY8Vg4yI-WTriQHaLH?rs=1&pid=ImgDetMain&o=7&rm=3)"
+}
+function Right(){
+alert("Well done, you chose the right answer");
+}
+function Rong(){
+alert("Your answer is Rong, try again");
+}
+</script>
+</body>
+</html>
